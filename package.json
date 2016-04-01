@@ -1,0 +1,52 @@
+{
+  "name": "github-auto-label",
+  "version": "0.0.1",
+  "description": "A small Node.js webshook server to auto-label new Github Issues or PRs on submission",
+  "main": "github-auto-label.js",
+  "scripts": {
+    "test": "tap test/*.tap.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sfbrigade/github-auto-label.git"
+  },
+  "keywords": [
+    "github",
+    "label",
+    "auto",
+    "tag",
+    "in",
+    "progress",
+    "needs",
+    "review",
+    "git",
+    "webhook",
+    "service",
+    "microservice",
+    "brigade",
+    "cfa",
+    "c4sf",
+    "cfsf",
+    "code",
+    "for",
+    "san",
+    "francisco"
+  ],
+  "author": "Trent Oswald <trentoswald@therebelrobot.com> (@therebelrobot)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sfbrigade/github-auto-label/issues"
+  },
+  "homepage": "https://github.com/sfbrigade/github-auto-label#readme",
+  "devDependencies": {
+    "standard": "^6.0.8",
+    "tap": "^5.7.0"
+  },
+  "dependencies": {
+    "commander": "^2.9.0",
+    "dotenv": "^2.0.0",
+    "express": "^4.13.4",
+    "lodash": "^4.7.0",
+    "request": "^2.69.0"
+  }
+}
