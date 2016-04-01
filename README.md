@@ -12,3 +12,18 @@ Environment Variable | Description | Default
 `WEBHOOK_PATH` | Server path for the webhook | `/`
 `GITHUB_SECRET` | Passphrase set up during Webhook addition | `thisIsASuperSecretSecret`
 `PORT` | Server port | `80`
+
+#### Set up a webhook for your repo
+
+- Go to `https://github.com/account/repo/settings/hooks`
+- click on "Add Webhook". Input your password and continue.
+
+![](https://i.imgur.com/sn51axo.png)
+
+- Fill in the Payload URL and Secret passphrase (`GITHUB_SECRET`) for the application. 
+- Under "Which events would you like to trigger this webhook?", select "Let me select individual events.", and select only the following:
+  - "Pull Request"
+  - "Issues"
+- Click "Add Webhook"
+
+![](https://i.imgur.com/HEL5F4d.png)
