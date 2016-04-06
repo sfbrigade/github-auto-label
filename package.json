@@ -4,7 +4,8 @@
   "description": "A small Node.js webshook server to auto-label new Github Issues or PRs on submission",
   "main": "github-auto-label.js",
   "scripts": {
-    "test": "tap test/*.tap.js"
+    "test": "tap test/*.tap.js",
+    "start": "node github-auto-label.js"
   },
   "repository": {
     "type": "git",
