@@ -67,7 +67,7 @@ webhookHandler.on('pull_request', function (repo, data) {
   })
 })
 webhookHandler.on('issues', function (repo, data) {
-  if (repos.indexOf(repo) < 0 || data.action !== 'opened' || labels.issue.length === 0)) return
+  if (repos.indexOf(repo) < 0 || data.action !== 'opened' || labels.issue.length === 0) return
   debug('[%s] Incoming webhook. adding labels %s to %s#%s', chalk.yellow('github-auto-label'), JSON.stringify(labels.issue), repo, data.issue.number)
   var opts = {
     method:'POST',
